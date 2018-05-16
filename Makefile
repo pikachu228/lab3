@@ -3,9 +3,9 @@ OBJ = gcc -c $< -o $@ $(CFLAGS)
 
 .PHONY: all clean
 
-all: bin build bin/chess.exe
+all: bin build bin/chessviz
 
-bin/chess.exe: build/main.o build/board_print_plain.o build/board_start.o build/board.o build/board_read.o
+bin/chessviz: build/main.o build/board_print_plain.o build/board_start.o build/board.o build/board_read.o
 	gcc $^ -o $@ $(CFLAGS)
 
 build/main.o: src/main.c
