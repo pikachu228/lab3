@@ -29,5 +29,5 @@ bin:
 	mkdir bin
 
 clean:
-	rm build/*.o
-	rm bin/*.exe
+	rm -rf build
+	rm -rf bin
